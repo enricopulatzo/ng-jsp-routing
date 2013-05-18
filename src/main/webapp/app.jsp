@@ -17,6 +17,8 @@
 	</div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+<script> var CONTEXT_ROOT = '${pageContext.request.contextPath}'; </script>
 <script src='<c:url value="/resources/js/app.js"/>'></script>
+<script src='<c:url value="/resources/js/app.controllers.js"/>'></script>
 </body>
 </html>
