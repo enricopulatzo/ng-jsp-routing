@@ -4,18 +4,18 @@ angular.module( 'routingDemo', ['routingDemo.controllers'] ).config(
 	{
 		$locationProvider.html5Mode( true ).hashPrefix( '!' );
 		$routeProvider.when(
-			CONTEXT_ROOT + "/app/1",
+			"/app/1",
 			{
 				controller : "page1",
 				templateUrl : CONTEXT_ROOT + "/partials/page1.html"
 			}
 		).when(
-			CONTEXT_ROOT + "/app/2",
+			"/app/2",
 			{
 				controller : "page2",
 				templateUrl : CONTEXT_ROOT + "/partials/page2.html"
 			}
 		)
-		.otherwise( { redirectTo : CONTEXT_ROOT + "/app/1" } );
+		.otherwise( { redirectTo : "/app/1" } );
 	}
 );

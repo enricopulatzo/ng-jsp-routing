@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Angular Demo</title>
 	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	<base href="${pageContext.request.contextPath}/">
 	<script src='<c:url value="/resources/css/app.css"/>'></script>
 </head>
 <body ng-app="routingDemo" id='ng-app'>
@@ -16,7 +17,7 @@
 		</div>
 	</div>
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.js"></script>
 <script> var CONTEXT_ROOT = '${pageContext.request.contextPath}'; </script>
 <script src='<c:url value="/resources/js/app.js"/>'></script>
 <script src='<c:url value="/resources/js/app.controllers.js"/>'></script>
